@@ -11,6 +11,7 @@ body {
   background-image: url(img/ticket-pattern-b.png),
     linear-gradient(#232323, #232323);
   background-size: cover;
+  color: #fff;
 }
 
 .navigation-bar {
@@ -25,6 +26,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 /* FLIPPER / SELLER: Inner Navigation Frame */
@@ -57,6 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 /* ///////////////////////////// */
@@ -71,7 +74,7 @@ body {
 
 .inner-frame {
   background-color: #232323;
-  width: 992px;
+  width: 832px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,11 +86,10 @@ body {
 }
 
 .steps-image {
-  width: 992px;
+  width: 832px;
 }
 
 .check-it-out-paragraph {
-  color: #fff;
   font-weight: 700;
   font-size: 42px;
 }
@@ -102,20 +104,29 @@ body {
   row-gap: 16px;
 }
 
+.first-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
 .graphic--frame {
   display: flex;
+  /* width: 400px; */
   gap: 24px;
 }
 
 .graphic--img {
-  width: 87px;
-  height: 104px;
-}
-
-.graphic--img--real-time {
-  width: 47px;
-  height: 54px;
-  /* height: auto; */
+  width: 47.5px;
+  height: auto;
 }
 
 .graphic--text {
@@ -124,12 +135,57 @@ body {
 .graphic--heading {
   font-size: 22px;
   font-weight: 500;
-  color: #fff;
   margin-bottom: 8px;
 }
 
 .graphic--description {
   font-size: 14px;
   font-weight: 400;
+}
+
+/* Crush the Comp Graphic */
+
+.crush--the--comp {
+  display: flex;
+  gap: 32px;
+  padding: 0 70px 50px 70px;
+}
+
+.crush--comp--heading {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.crush--comp--description {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* SIGN UP BUTTON */
+
+.sign-up-btn-frame {
+  width: 100%;
+}
+
+.sign-up-btn {
+  display: flex;
+  font-size: 60px;
+  font-weight: 700;
   color: #fff;
+  text-decoration: none;
+  border: 3px solid #febd1d;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  padding: 20px 30px;
+}
+
+.sign-up-btn:link,
+.sign-up-btn:visited {
+  color: #fff;
+}
+
+.sign-up-btn:hover,
+.sign-up-btn:active {
+  background-color: #febd1d;
 }
