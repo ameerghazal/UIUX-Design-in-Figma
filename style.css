@@ -8,8 +8,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   height: 100vh;
-  background-image: url(img/ticket-pattern-b.png),
-    linear-gradient(#232323, #232323);
+  background-color: #232323;
+  background-image: url(img/ticket-pattern-b.png);
   background-size: cover;
   color: #fff;
 }
@@ -81,6 +81,16 @@ body {
   align-items: center;
 }
 
+.outer-frame-2 {
+  padding: 50px 70px;
+  background-color: #232323;
+}
+
+.outer-frame-1 {
+  padding: 10px;
+  background-color: #232323;
+}
+
 .inner-frame {
   background-color: #232323;
   width: 832px;
@@ -109,33 +119,24 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(2, 1fr); */
-  column-gap: 64px;
+  column-gap: 32px;
   row-gap: 16px;
-}
-
-.first-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.second-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
 }
 
 .graphic--frame {
   display: flex;
-  /* width: 400px; */
-  gap: 24px;
+  width: 400px;
+  gap: 16px;
 }
 
-.graphic--img {
+.graphic--img--frame {
   width: 87px;
-  height: auto;
+  height: 104px;
+}
+
+.graphic--img--frame img {
+  width: 100%;
+  /* height: 100%; */
 }
 
 .graphic--text {
@@ -217,17 +218,23 @@ body {
 
 .footer--text {
   justify-self: center;
-  font-weight: 700;
   text-align: center;
 }
 
-/* .footer-privacy {
-  margin: 0 auto;
+.footer--privacy {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.footer-copyright {
+.footer--privacy:link,
+.footer--privacy:visited,
+.footer--privacy:hover,
+.footer--privacy:active {
+  color: #fff;
 }
 
-.footer--text {
-  justify-self: center;
-} */
+.footer--copyright {
+  font-weight: 400;
+}
