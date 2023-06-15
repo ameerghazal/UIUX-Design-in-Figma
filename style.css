@@ -14,7 +14,17 @@ body {
   color: #fff;
 }
 
+/* ///////////////////////////////// */
+
+/* NAVIGATION BAR */
+
 .navigation-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.header-inner-frame {
+  width: 992px;
   display: flex;
   justify-content: space-between;
   margin: 0 10px;
@@ -22,11 +32,10 @@ body {
 
 /* UFLIP LOGO Frame */
 
-.logo {
+.uflip-logo-frame {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 /* FLIPPER / SELLER: Inner Navigation Frame */
@@ -125,7 +134,7 @@ body {
 }
 
 .graphic--img {
-  width: 47.5px;
+  width: 87px;
   height: auto;
 }
 
@@ -196,14 +205,29 @@ body {
 
 .footer-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.inner-footer-frame {
+.footer-inner-frame {
   width: 992px;
-  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  padding: 10px;
 }
 
-/* .footer--text {
+.footer--text {
+  justify-self: center;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* .footer-privacy {
+  margin: 0 auto;
+}
+
+.footer-copyright {
+}
+
+.footer--text {
   justify-self: center;
 } */
