@@ -78,24 +78,25 @@ body {
   justify-content: center;
 }
 
-/* *** HEADER / NAVIGATION BAR *** */
-
-.navigation-bar {
-  justify-content: center;
+.grid-display {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
+
+/* *** HEADER / NAVIGATION BAR *** */
 
 .header-inner-frame {
   width: 99.2rem;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 1rem;
   margin: 1rem 0;
 }
 
 /* UFLIP LOGO Frame */
 
-/* .uflip-logo-frame {
-} */
+.uflip-logo-frame {
+  /* Position on the grid */
+  justify-self: left;
+}
 
 .uflip--logo {
   width: 14.8rem;
@@ -111,6 +112,7 @@ body {
 
 .flipper-seller-buttons {
   gap: 4.8rem;
+  justify-self: center;
 }
 
 .heading--button {
@@ -138,6 +140,7 @@ body {
 /* USER ICON FRAME */
 .icon {
   cursor: pointer;
+  justify-self: right;
 }
 
 .user--icon {
@@ -198,6 +201,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3.2rem;
   row-gap: 1.6rem;
+  /* justify-items: left; */
 }
 
 .graphic--frame {
@@ -209,11 +213,18 @@ body {
 .graphic--img--frame {
   width: 8.7rem;
   height: 10.4rem;
+  display: flex;
+  align-items: center;
 }
 
-.graphic--img--frame img {
-  width: 100%;
-  /* height: 100%; */
+.graphic--img.first-column {
+  width: 8.7rem;
+  height: auto;
+}
+
+.graphic--img.second-column {
+  width: 5.2rem;
+  height: auto;
 }
 
 .graphic--text {
@@ -285,8 +296,6 @@ body {
 
 .footer-inner-frame {
   width: 99.2rem;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
   padding: 1rem;
   margin-bottom: 1rem;
 }
