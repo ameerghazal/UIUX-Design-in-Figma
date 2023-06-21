@@ -207,8 +207,8 @@ body {
 }
 
 .graphic--img--frame {
-  width: 87px;
-  height: 104px;
+  width: 8.7rem;
+  height: 10.4rem;
 }
 
 .graphic--img--frame img {
@@ -260,7 +260,7 @@ body {
   color: #fff;
   text-decoration: none;
   border: 3px solid #febd1d;
-  border-radius: 22px;
+  border-radius: 2.2rem;
   padding: 2rem 3rem;
   transition: all 0.5s;
 }
