@@ -18,8 +18,8 @@ Default: 1
 -- 02 COLORS
 
 - Primary: #febd1d;
-- Tints: #fff
-- Shades:
+- Tints: #fff, #f1f3f5
+- Shades: opacity(80%)
 - Accents:
 - Greys: #232323
 
@@ -51,70 +51,102 @@ Default: 9px
   box-sizing: border-box;
 }
 
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #232323;
-  background-image: url(img/ticket-pattern-b.png);
+  background-image: url(img/ticket-background.webp);
   background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
   color: #fff;
 }
 
 /* *** GENERIC REUSABLE STYLES: GRID, CONTAINER, ETC. *** */
 
+.flex-display {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
 /* *** HEADER / NAVIGATION BAR *** */
 
 .navigation-bar {
-  display: flex;
   justify-content: center;
 }
 
 .header-inner-frame {
-  width: 992px;
-  display: flex;
+  width: 99.2rem;
   justify-content: space-between;
-  margin: 0 10px;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 1rem 0;
 }
 
 /* UFLIP LOGO Frame */
 
-.uflip-logo-frame {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* .uflip-logo-frame {
+} */
+
+.uflip--logo {
+  width: 14.8rem;
+  height: 2.6rem;
+}
+
+.uflip--logo:hover,
+.uflip--logo:active {
+  filter: opacity(80%);
 }
 
 /* FLIPPER / SELLER: Inner Navigation Frame */
 
 .flipper-seller-buttons {
-  display: flex;
-  gap: 32px;
-  font-weight: 700;
+  gap: 4.8rem;
 }
 
 .heading--button {
   text-decoration: none;
-  font-size: 32px;
+  font-weight: 700;
+  font-size: 2.8rem;
 }
 
 .heading--button:link,
-.heading--button:visited,
+.heading--button:visited {
+  color: #fff;
+}
+
 .heading--button:hover,
 .heading--button:active {
-  color: #fff;
+  filter: opacity(80%);
 }
 
 /* Overrides the one above */
 .heading--button.active {
+  filter: opacity(100%);
   color: #febd1d;
 }
 
 /* USER ICON FRAME */
 .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
+}
+
+.user--icon {
+  width: 2.4rem;
+}
+
+.user--icon:hover,
+.user--icon:active {
+  filter: opacity(80%);
 }
 
 /* ************************************************** */
@@ -128,35 +160,35 @@ body {
 }
 
 .outer-frame-2 {
-  padding: 50px 70px;
+  padding: 5rem 7rem;
   background-color: #232323;
 }
 
 .outer-frame-1 {
-  padding: 10px;
+  padding: 1rem;
   background-color: #232323;
 }
 
 .inner-frame {
   background-color: #232323;
-  width: 832px;
+  width: 83.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .broker-like-boss {
   align-self: flex-start;
 }
 
-.steps-image {
-  width: 832px;
+.steps-img {
+  width: 83.2rem;
 }
 
 .check-it-out-paragraph {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 4.2rem;
 }
 
 /* FOUR GRAPHICS */
@@ -164,15 +196,14 @@ body {
 .four-graphics {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
-  column-gap: 32px;
-  row-gap: 16px;
+  column-gap: 3.2rem;
+  row-gap: 1.6rem;
 }
 
 .graphic--frame {
   display: flex;
-  width: 400px;
-  gap: 16px;
+  width: 40rem;
+  gap: 1.6rem;
 }
 
 .graphic--img--frame {
@@ -203,17 +234,17 @@ body {
 
 .crush--the--comp {
   display: flex;
-  gap: 32px;
-  padding: 0 70px 50px 70px;
+  gap: 3.2rem;
+  padding: 0 7rem 5rem 7rem;
 }
 
 .crush--comp--heading {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 500;
 }
 
 .crush--comp--description {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
 }
 
@@ -224,16 +255,14 @@ body {
 }
 
 .sign-up-btn {
-  display: flex;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 700;
   color: #fff;
   text-decoration: none;
   border: 3px solid #febd1d;
-  justify-content: center;
-  align-items: center;
   border-radius: 22px;
-  padding: 20px 30px;
+  padding: 2rem 3rem;
+  transition: all 0.5s;
 }
 
 .sign-up-btn:link,
@@ -251,15 +280,20 @@ body {
 /* *** FOOTER *** */
 
 .footer-bar {
-  display: flex;
   justify-content: center;
 }
 
 .footer-inner-frame {
-  width: 992px;
+  width: 99.2rem;
   display: grid;
-  grid-template-columns: 1fr 50% 1fr;
-  padding: 10px;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.natb-logo:hover,
+.natb-logo:active {
+  filter: opacity(80%);
 }
 
 .footer--text {
@@ -272,15 +306,20 @@ body {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
+  font-size: 1.33rem;
 }
 
 .footer--privacy:link,
-.footer--privacy:visited,
+.footer--privacy:visited {
+  color: #fff;
+}
+
 .footer--privacy:hover,
 .footer--privacy:active {
-  color: #fff;
+  filter: opacity(80%);
 }
 
 .footer--copyright {
   font-weight: 400;
+  font-size: 1.4rem;
 }

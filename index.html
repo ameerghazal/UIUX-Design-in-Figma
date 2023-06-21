@@ -15,18 +15,20 @@
   </head>
   <body>
     <header>
-      <nav class="navigation-bar">
-        <div class="header-inner-frame">
-          <div class="uflip-logo-frame">
+      <nav class="navigation-bar flex-display">
+        <div class="header-inner-frame flex-display">
+          <div class="uflip-logo-frame flex-display flex-center">
             <a href="https://uflip.com/">
               <img src="img/logo-sm.png" alt="UFLIP Logo" class="uflip--logo" />
             </a>
           </div>
-          <div class="flipper-seller-buttons">
-            <a href="#" class="heading--button">FLIPPER</a>
+          <div class="flipper-seller-buttons flex-display">
+            <a href="https://uflip.com/flipper" class="heading--button"
+              >FLIPPER</a
+            >
             <a href="#" class="heading--button active">SELLER</a>
           </div>
-          <div class="icon">
+          <div class="icon flex-display flex-center">
             <a
               href="https://login.uflip.com/account/login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Decef0dc8-0a65-4ad3-a30a-b7882dde6bd5%26redirect_uri%3Dhttps%253A%252F%252Fbuy.uflip.com%252Fcallback.html%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520api1%2520gateway%26state%3Ddd76a0722fb34697b1dda3d9622a784b%26code_challenge%3DFDZZn91MfCUZESkJNqShw6uTdZL4LhPudYwwYsHhxos%26code_challenge_method%3DS256%26response_mode%3Dquery"
             >
@@ -59,7 +61,7 @@
                 <img
                   src="img/steps-1-2-3.png"
                   alt="Steps 1, 2, 3"
-                  class="steps-image"
+                  class="steps-img"
                 />
               </div>
               <div>
@@ -153,7 +155,9 @@
                 </div>
               </div>
               <div class="sign-up-btn-frame">
-                <a href="https://uflip.com/seller-signup" class="sign-up-btn"
+                <a
+                  href="https://uflip.com/seller-signup"
+                  class="sign-up-btn flex-display flex-center"
                   >SIGN UP FOR A DEMO</a
                 >
               </div>
@@ -164,11 +168,15 @@
     </main>
 
     <footer>
-      <nav class="footer-bar">
+      <nav class="footer-bar flex-display">
         <div class="footer-inner-frame">
           <div class="natb-frame">
             <a href="https://www.natb.org/">
-              <img src="img/natb_logo_light.png" alt="NATB Logo" />
+              <img
+                src="img/natb_logo_light.png"
+                alt="NATB Logo"
+                class="natb-logo"
+              />
             </a>
           </div>
           <div class="footer--text">
@@ -177,7 +185,11 @@
             >
             <p class="footer--copyright">ⓒ 2023 Copyright: UFLIP.COM</p>
           </div>
-          <div class="placeholder"></div>
+          <div
+            class="placeholder"
+            role="placeholder"
+            aria-label="empty box"
+          ></div>
         </div>
       </nav>
     </footer>
