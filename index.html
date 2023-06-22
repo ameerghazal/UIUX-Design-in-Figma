@@ -25,47 +25,91 @@
 
     <link href="style.css" rel="stylesheet" />
     <link href="queries.css" rel="stylesheet" />
+    <script type="module" src="script.js"></script>
     <title>UFLIP | Broker Like A Boss</title>
   </head>
   <body>
     <header>
       <nav class="navigation-bar flex-display flex-center">
-        <div class="header-inner-frame grid-display">
-          <div class="uflip-logo-frame flex-display flex-center">
-            <a href="https://uflip.com/" class="uflip--logo--link">
-              <img src="img/logo-sm.png" alt="UFLIP Logo" class="uflip--logo" />
-            </a>
-            <!-- Used for the meduim and small screens -->
-            <ion-icon name="menu-outline" class="menu-btn-icon"></ion-icon>
+        <div class="header-inner-frame-color">
+          <div class="header-inner-frame grid-display">
+            <div class="uflip-logo-frame flex-display flex-center">
+              <a href="https://uflip.com/" class="uflip--logo--link">
+                <img
+                  src="img/logo-sm.png"
+                  alt="UFLIP Logo"
+                  class="uflip--logo"
+                />
+              </a>
+              <!-- Used for the meduim and small screens -->
+              <div class="menu-btn-frame">
+                <div class="menu-btn-row-1"></div>
+                <div class="menu-btn-row-2"></div>
+                <div class="menu-btn-row-3"></div>
+              </div>
+            </div>
+            <div class="flipper-seller-buttons">
+              <a href="https://uflip.com/flipper" class="heading--button"
+                >FLIPPER</a
+              >
+              <a href="#" class="heading--button active">SELLER</a>
+              <!-- THIS NEXT LOGO IS FOR THE MEDIUM SIZED SCREENS -->
+              <a href="https://uflip.com/">
+                <img
+                  src="img/logo-sm.png"
+                  alt="UFLIP Logo"
+                  class="uflip--logo tablet--logo"
+                />
+              </a>
+            </div>
+            <div class="icon flex-display flex-center">
+              <a
+                href="https://login.uflip.com/account/login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Decef0dc8-0a65-4ad3-a30a-b7882dde6bd5%26redirect_uri%3Dhttps%253A%252F%252Fbuy.uflip.com%252Fcallback.html%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520api1%2520gateway%26state%3Ddd76a0722fb34697b1dda3d9622a784b%26code_challenge%3DFDZZn91MfCUZESkJNqShw6uTdZL4LhPudYwwYsHhxos%26code_challenge_method%3DS256%26response_mode%3Dquery"
+              >
+                <img
+                  src="img/user-solid-sm.png"
+                  alt="User Icon"
+                  class="user--icon"
+                />
+              </a>
+            </div>
           </div>
-          <div class="flipper-seller-buttons">
-            <a href="https://uflip.com/flipper" class="heading--button"
-              >FLIPPER</a
-            >
-            <a href="#" class="heading--button active">SELLER</a>
-            <!-- THIS NEXT LOGO IS FOR THE MEDIUM SIZED SCREENS -->
-            <a href="https://uflip.com/">
-              <img
-                src="img/logo-sm.png"
-                alt="UFLIP Logo"
-                class="uflip--logo tablet--logo"
-              />
+        </div>
+        <!-- ONLY FOR TABLET VERSIONS!!! -->
+        <div class="header-animation hidden">
+          <div class="header-drop-down">
+            <a class="menu-box" href="https://uflip.com/">
+              <p class="menu-text">HOME</p>
+              <ion-icon name="home-outline" class="menu-icon"></ion-icon>
             </a>
-          </div>
-          <div class="icon flex-display flex-center">
+            <a class="menu-box flipper-hover" href="https://uflip.com/flipper">
+              <p class="menu-text">FLIPPER</p>
+              <ion-icon name="person-outline" class="menu-icon"></ion-icon>
+            </a>
             <a
+              class="menu-box seller-hover active-class"
+              href="https://uflip.com/seller"
+            >
+              <p class="menu-text">SELLER</p>
+              <ion-icon name="cash-outline" CLASS="menu-icon"></ion-icon>
+            </a>
+            <a
+              class="menu-box"
               href="https://login.uflip.com/account/login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Decef0dc8-0a65-4ad3-a30a-b7882dde6bd5%26redirect_uri%3Dhttps%253A%252F%252Fbuy.uflip.com%252Fcallback.html%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520api1%2520gateway%26state%3Ddd76a0722fb34697b1dda3d9622a784b%26code_challenge%3DFDZZn91MfCUZESkJNqShw6uTdZL4LhPudYwwYsHhxos%26code_challenge_method%3DS256%26response_mode%3Dquery"
             >
-              <img
-                src="img/user-solid-sm.png"
-                alt="User Icon"
-                class="user--icon"
-              />
+              <p class="menu-text">LOGIN</p>
+              <ion-icon name="log-in-outline" CLASS="menu-icon"></ion-icon>
+            </a>
+            <a class="menu-box" href="https://uflip.com/signup">
+              <p class="menu-text">SIGN-UP</p>
+              <ion-icon name="add-circle-outline" CLASS="menu-icon"></ion-icon>
             </a>
           </div>
         </div>
       </nav>
     </header>
+
+    <!-- <div class="header-drop-down">LOL</div> -->
 
     <main>
       <section class="main-body-content">

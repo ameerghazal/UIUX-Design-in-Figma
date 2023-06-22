@@ -24,14 +24,14 @@
     display: none;
   }
 
-  .menu-btn-icon {
-    display: block;
-    color: #9c9c9c;
-    width: 4.2rem;
-    height: 4.2rem;
+  .menu-btn-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
   }
 
-  .menu-btn-icon:hover {
+  .menu-btn-frame:hover {
     cursor: pointer;
     filter: opacity(80%);
   }
@@ -45,6 +45,94 @@
     /* Display the logo in place of the flipper & seller buttons and align it in the grid */
     display: block;
     justify-self: center;
+  }
+
+  /* TABLET EDITION */
+  .header-animation {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 0.3s ease-out;
+  }
+
+  .header-animation.header-drop-down-animation {
+    grid-template-rows: 1fr;
+    margin-bottom: 2rem;
+  }
+
+  .header-drop-down-styles {
+    background-color: #333;
+    padding: 0.5rem 0;
+    transition: all 0.3s;
+  }
+
+  .header-drop-down-background-color {
+    background-color: transparent;
+  }
+
+  .header-drop-down {
+    display: flex;
+    width: 57.6rem;
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #333;
+
+    /* For the transition */
+    overflow: hidden;
+    grid-row: 1/2;
+  }
+
+  .menu-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.1rem solid #505050;
+    color: #7f7f7f;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .menu-box:last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .menu-box:link,
+  .menu.box:visited,
+  .menu-box.flipper-hover:link,
+  .menu-box.flipper-hover:visited,
+  .menu-box.seller-hover:link,
+  .menu-box.seller-hover:visited {
+    color: #7f7f7f;
+  }
+
+  .menu-box:hover,
+  .menu-box:active {
+    color: #fff;
+  }
+
+  .menu-box.flipper-hover:hover,
+  .menu-box.flipper-hover:active {
+    color: #00cdff;
+  }
+
+  .menu-box.seller-hover:hover,
+  .menu-box.seller-hover:active {
+    color: #febd1d;
+  }
+
+  /* This is to match the online design. */
+  .menu-box.seller-hover.active-class {
+    color: #febd1d !important;
+  }
+
+  .menu-text {
+    font-weight: 700;
+    font-size: 1.75rem;
+  }
+
+  .menu-icon {
+    width: 2.4rem;
+    height: 2.4rem;
   }
 
   /* MAIN SECTION BODY */
@@ -97,7 +185,7 @@
   }
 
   .graphic--img.second-column {
-    width: 5.2rem;
+    width: 6.8rem;
     height: auto;
   }
 
