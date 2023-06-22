@@ -21,7 +21,7 @@ Default: 1
 - Tints: #fff, #f1f3f5
 - Shades: opacity(80%)
 - Accents:
-- Greys: #232323
+- Greys: #232323, #9c9c9c
 
 -- 03 IMAGES
 
@@ -108,9 +108,15 @@ body {
   filter: opacity(80%);
 }
 
+/* for the medium sized tablet */
+.menu-btn-icon {
+  display: none;
+}
+
 /* FLIPPER / SELLER: Inner Navigation Frame */
 
 .flipper-seller-buttons {
+  display: flex;
   gap: 4.8rem;
   justify-self: center;
 }
@@ -135,6 +141,11 @@ body {
 .heading--button.active {
   filter: opacity(100%);
   color: #febd1d;
+}
+
+/* for the medium sized tablet */
+.tablet--logo {
+  display: none;
 }
 
 /* USER ICON FRAME */
@@ -185,13 +196,17 @@ body {
   align-self: flex-start;
 }
 
-.steps-img {
-  width: 83.2rem;
-}
-
 .check-it-out-paragraph {
   font-weight: 700;
   font-size: 4.2rem;
+}
+
+.steps-img {
+  width: 100%;
+}
+
+.less-distractions-img {
+  width: 100%;
 }
 
 /* FOUR GRAPHICS */
@@ -231,13 +246,13 @@ body {
 }
 
 .graphic--heading {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 500;
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 }
 
 .graphic--description {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -246,7 +261,9 @@ body {
 .crush--the--comp {
   display: flex;
   gap: 3.2rem;
-  padding: 0 7rem 5rem 7rem;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 7rem 5rem 7rem; */
 }
 
 .crush--comp--heading {
@@ -270,7 +287,7 @@ body {
   font-weight: 700;
   color: #fff;
   text-decoration: none;
-  border: 3px solid #febd1d;
+  border: 0.3rem solid #febd1d;
   border-radius: 2.2rem;
   padding: 2rem 3rem;
   transition: all 0.5s;

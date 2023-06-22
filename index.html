@@ -6,28 +6,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="img/user-solid-sm.png" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-    <title>UFLIP | Broker Like A Boss</title>
     <link href="style.css" rel="stylesheet" />
+    <link href="queries.css" rel="stylesheet" />
+    <title>UFLIP | Broker Like A Boss</title>
   </head>
   <body>
     <header>
       <nav class="navigation-bar flex-display flex-center">
         <div class="header-inner-frame grid-display">
           <div class="uflip-logo-frame flex-display flex-center">
-            <a href="https://uflip.com/">
+            <a href="https://uflip.com/" class="uflip--logo--link">
               <img src="img/logo-sm.png" alt="UFLIP Logo" class="uflip--logo" />
             </a>
+            <!-- Used for the meduim and small screens -->
+            <ion-icon name="menu-outline" class="menu-btn-icon"></ion-icon>
           </div>
-          <div class="flipper-seller-buttons flex-display">
+          <div class="flipper-seller-buttons">
             <a href="https://uflip.com/flipper" class="heading--button"
               >FLIPPER</a
             >
             <a href="#" class="heading--button active">SELLER</a>
+            <!-- THIS NEXT LOGO IS FOR THE MEDIUM SIZED SCREENS -->
+            <a href="https://uflip.com/">
+              <img
+                src="img/logo-sm.png"
+                alt="UFLIP Logo"
+                class="uflip--logo tablet--logo"
+              />
+            </a>
           </div>
           <div class="icon flex-display flex-center">
             <a
@@ -69,6 +92,7 @@
                 <img
                   src="img/more-tickets-less-distractions.png"
                   alt="More Tickets Less Distractions."
+                  class="less-distractions-img"
                 />
               </div>
               <div class="four-graphics">
