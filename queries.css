@@ -31,21 +31,15 @@
     height: 4.2rem;
   }
 
+  .menu-btn-icon:hover {
+    cursor: pointer;
+    filter: opacity(80%);
+  }
+
   .uflip--logo {
     width: 11.4rem;
     height: auto;
   }
-
-  .menu-button {
-    display: block;
-  }
-
-  /* .menu-button:hover {
-    cursor: pointer;
-
-    color: blue;
-    filter: opacity(80%);
-  } */
 
   .uflip--logo.tablet--logo {
     /* Display the logo in place of the flipper & seller buttons and align it in the grid */
