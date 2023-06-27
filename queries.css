@@ -2,7 +2,7 @@
 /* IS THE AUTO SETTING */
 
 /* MEDIUM SCREENS: 576px -> 992px */
-@media (min-width: 36em) and (max-width: 62em) {
+@media (max-width: 62em) {
   /* NAVIGATION BAR CHANGES */
 
   .header-inner-frame {
@@ -47,11 +47,11 @@
     justify-self: center;
   }
 
-  /* TABLET EDITION */
+  /***************** TABLET EDITION DROP DOWN BOX *************** */
   .header-animation {
     display: grid;
     grid-template-rows: 0fr;
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
   }
 
   .header-animation.header-drop-down-animation {
@@ -72,7 +72,7 @@
   .header-drop-down {
     display: flex;
     width: 57.6rem;
-    padding: 0 1rem;
+    padding: 0 3%;
     flex-direction: column;
     gap: 0.5rem;
     background-color: #333;
@@ -224,5 +224,173 @@
 }
 
 /* SMALL SCREENS 576px = 36em */
+/* Inherits properties from above size. */
 @media (max-width: 36em) {
+  /* NAVIGATION BAR CHANGES */
+
+  .navigation-bar {
+    width: 100%;
+  }
+
+  .header-inner-frame-color {
+    width: 100%;
+  }
+
+  .header-inner-frame {
+    width: 100%;
+  }
+
+  .uflip--logo {
+    width: calc(7.6rem + 20vw);
+    height: auto;
+  }
+
+  /** TABLET EDITION DROP DOWN BOX **** */
+
+  .header-animation {
+    width: 100% !important;
+  }
+
+  .header-drop-down {
+    width: 100%;
+  }
+
+  .menu-btn-row-1,
+  .menu-btn-row-2,
+  .menu-btn-row-3 {
+    width: 5rem;
+    height: 0.6rem;
+  }
+
+  .menu-box {
+    width: 100%;
+  }
+
+  /*********** MAIN SECTION BODY **********/
+
+  .outer-frame-2 {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .outer-frame-1 {
+    padding: 0.5rem;
+  }
+
+  .inner-frame {
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  .broker-like-boss img {
+    width: 18.4rem;
+    height: auto;
+  }
+
+  .check-it-out {
+    padding-top: 0.5rem;
+  }
+
+  .check-it-out-paragraph {
+    font-size: 2rem;
+  }
+
+  .less-distractions-img {
+    width: 35rem;
+    margin-top: 0.5rem;
+  }
+
+  .four-graphics {
+    row-gap: 2rem;
+  }
+
+  .graphic--frame {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .graphic--img--frame {
+    width: 5.6rem;
+    height: 6.7rem;
+    align-self: center;
+  }
+
+  .graphic--img.first-column {
+    width: 5.6rem;
+    height: auto;
+  }
+
+  .graphic--img.second-column {
+    width: 5.6rem;
+    height: 6.7rem;
+  }
+
+  .graphic--text {
+    margin-bottom: 0.5rem;
+  }
+
+  .graphic--heading {
+    font-size: 1.4rem;
+  }
+
+  .graphic--description {
+    font-size: 1.2rem;
+  }
+
+  /* CRUSH THE COMP */
+
+  .crush--the--comp {
+    width: 100%;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .crush--the--comp img {
+    width: 5.6rem;
+    height: auto;
+  }
+
+  .crush--comp--text {
+    gap: 0.5rem;
+  }
+
+  .crush--comp--heading {
+    font-size: 1.4rem;
+  }
+
+  .crush--comp--description {
+    font-size: 1.2rem;
+  }
+
+  /* SIGN UP FRAME */
+
+  .sign-up-btn-frame {
+    height: 3.9rem;
+  }
+
+  .sign-up-btn {
+    font-size: 1.9rem;
+    border-radius: 0.8rem;
+    border: 0.2rem solid #febd1d;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  /************* FOOTER **************/
+
+  .footer-inner-frame {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .natb-frame {
+    text-align: center;
+  }
+
+  .footer--privacy {
+    margin-bottom: 0.5rem;
+  }
 }
